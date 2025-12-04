@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://diplomaticfellow.github.io">
+    <link rel="preconnect" href="https://www.linkedin.com">
+    <link rel="preload" href="assets/Document.png" as="image">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>PORTFOLIO</h1>
+        <nav class="header-links">
+            <a href="https://diplomaticfellow.github.io/" target="_blank" rel="noopener">SITE</a>
+            <a href="https://www.linkedin.com/in/danialjeelani/" target="_blank" rel="noopener">LINKEDIN</a>
+            <a href="https://diplomaticfellow.github.io/CV.pdf" target="_blank" rel="noopener">CV</a>
+        </nav>
+    </header>
+
+    <main class="gallery">
+        <!-- Assets folder -->
+        <div class="gallery-item" data-title="Document" data-description="Graphic design project">
+            <img src="assets/Document.png" alt="Document" loading="eager">
+        </div>
+        <div class="gallery-item" data-title="Arabic" data-description="Arabic typography design">
+            <img src="assets/Arabic.png" alt="Arabic" loading="lazy">
+        </div>
+        <div class="gallery-item" data-title="Echoes" data-description="Visual identity project">
+            <img src="assets/ECHOES.png" alt="Echoes" loading="lazy">
+        </div>
+        <div class="gallery-item" data-title="HYD" data-description="City poster design">
+            <img src="assets/hyd.png" alt="HYD" loading="lazy">
+        </div>
+        <div class="gallery-item" data-title="Le Mans" data-description="Racing poster design">
+            <img src="assets/le mans.png" alt="Le Mans" loading="lazy">
+        </div>
+        <div class="gallery-item" data-title="Makeup" data-description="Beauty product photography">
+            <img src="assets/Makeup.png" alt="Makeup" loading="lazy">
+        </div>
+        <div class="gallery-item" data-title="Time" data-description="Time design concept">
+            <img src="assets/Time.png" alt="Time" loading="lazy">
+        </div>
+
+        <!-- Assets-mockup folder -->
+        <div class="gallery-item" data-title="Arabic Design Mockup" data-description="Mockup presentation">
+            <img src="assets-mockup/arabic-design.png" alt="Arabic Design Mockup" loading="lazy">
+        </div>
+        <div class="gallery-item" data-title="HYD Poster Mockup" data-description="Poster mockup">
+            <img src="assets-mockup/hyd poster.png" alt="HYD Poster Mockup" loading="lazy">
+        </div>
+        <div class="gallery-item" data-title="Le Mans Poster Mockup" data-description="Poster mockup">
+            <img src="assets-mockup/le mans poster.png" alt="Le Mans Poster Mockup" loading="lazy">
+        </div>
+    </main>
+
+    <!-- Modal for detailed view -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img class="modal-image" id="modalImage" src="" alt="">
+            <div class="modal-info">
+                <h2 id="modalTitle"></h2>
+                <p id="modalDescription"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
