@@ -1,4 +1,4 @@
-import Image from "next/image"
+import { asset } from "@/lib/asset"
 
 export function Hero() {
   return (
@@ -63,12 +63,10 @@ export function Hero() {
 function ThumbCard({ src, alt }: { src: string; alt: string }) {
   return (
     <figure className="relative aspect-[3/4] overflow-hidden border border-border bg-muted">
-      <Image
-        src={src || "/placeholder.svg"}
+      <img
+        src={asset(src)}
         alt={alt}
-        fill
-        sizes="(min-width: 768px) 16vw, 30vw"
-        className="object-cover"
+        className="absolute inset-0 w-full h-full object-cover"
       />
     </figure>
   )

@@ -1,4 +1,3 @@
-import Image from "next/image"
 import { asset } from "@/lib/asset"
 
 export function WebDesign() {
@@ -62,13 +61,10 @@ export function WebDesign() {
 
           {/* Tall preview with bottom fade */}
           <div className="relative max-h-[78vh] overflow-hidden">
-            <Image
-              src="/web/opho-1.png"
+            <img
+              src={asset("/web/opho-1.png")}
               alt="Opho website design — full page preview by Danial Jeelani"
-              width={2200}
-              height={9815}
               className="w-full h-auto block"
-              priority={false}
             />
             {/* Fade-out at the bottom to invite the user to view full */}
             <div
